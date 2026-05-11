@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+  --animate-marquee: marquee 25s linear infinite;
+  
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/10 dark:bg-black/20 backdrop-blur-md border border-white/20 dark:border-white/10 shadow-lg;
+  }
+  .glass-panel {
+    @apply bg-white/40 dark:bg-black/40 backdrop-blur-xl border border-white/30 dark:border-white/10 shadow-xl rounded-2xl;
+  }
+  .shiny-gold-text {
+    background: linear-gradient(to right, #fdf1b6, #e3c477, #c69e4f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .shiny-gold-bg {
+    background: linear-gradient(to right, #fdf1b6, #e3c477, #c69e4f);
+    color: #1e293b;
+  }
+  .stroke-text {
+    -webkit-text-stroke: 1px currentColor;
+    color: transparent;
+  }
+}
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+[data-theme='dark'] {
+  --background: #020617;
+  --foreground: #f8fafc;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}

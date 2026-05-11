@@ -1,0 +1,179 @@
+# FRONTEND.PRD – Dinesh Global Exim
+
+## Frontend Stack
+- Next.js
+- Tailwind CSS
+- Framer Motion
+- React Hook Form
+- Zod Validation
+- Lucide React Icons
+
+---
+
+# Website Pages
+
+1. Home Page
+2. About Us
+3. Products Page
+4. Why Choose Us
+5. Contact Us
+6. Inquiry Form Page
+
+---
+
+# Navbar Requirements
+
+- Company Logo
+- Navigation Links
+- Sticky Header
+- Mobile Responsive Menu
+- Inquiry CTA Button
+
+---
+
+# Home Page
+
+## Hero Section
+- Export business banner
+- Company introduction
+- CTA buttons
+- Auto-scroll image slider
+- World map visuals
+
+## Trust Section
+- Trusted Indian Exporter
+- Worldwide Shipping Available
+- Quality Assurance Guaranteed
+
+## Featured Products
+- Cotton Fabric
+- Readymade Garments
+- Agricultural Products
+- Metals
+- Mixed Products
+
+## Export Markets
+- Middle East
+- Asia
+- Africa
+- Europe
+
+---
+
+# About Us Page
+
+## Sections
+- Company Introduction
+- Mission
+- Vision
+- Why Clients Trust Us
+
+---
+
+# Products Page
+
+## Product Cards
+Each card should contain:
+- Product image
+- Product title
+- Product description
+- Inquiry button
+
+## Products
+- Cotton Fabric
+- Readymade Garments
+- Agricultural Products
+- Metals
+- Mixed Products
+
+---
+
+# Why Choose Us Page
+
+## Features
+- High Quality Products
+- Competitive Pricing
+- Strong Supplier Network
+- Timely Delivery
+- Transparent Business Dealings
+- Customer Satisfaction
+
+---
+
+# Contact Us Page
+
+## Contact Details
+Address:
+501, Desk No. 243, Shapath 1, Bodakdev, SG Highway,
+Ahmedabad, Gujarat, India – 380054
+
+Email:
+dineshglobalexim@gmail.com
+
+Phone:
+9428417032
+
+## Features
+- Google Map
+- WhatsApp Button
+- Quick Contact Form
+
+---
+
+# Inquiry Form
+
+## Fields
+- Name
+- Email
+- Country
+- Company Name
+- Phone Number
+- Product Requirement
+- Message
+
+## Features
+- Form validation
+- Loading state
+- Success message
+- Error handling
+
+---
+
+# UI Requirements
+
+- Modern professional UI
+- Mobile responsive
+- Fast loading
+- SEO optimized
+- Smooth animations
+- Accessible design
+
+---
+
+# Components
+
+- Navbar
+- Hero Section
+- Product Card
+- Feature Card
+- Footer
+- Inquiry Form
+- WhatsApp Floating Button
+
+---
+
+# SEO Requirements
+
+Keywords:
+- Exporter from India
+- Cotton Fabric Export
+- Agriculture Export India
+- Metal Export Company
+
+---
+
+# Deployment
+
+Frontend Hosting:
+- Vercel
+

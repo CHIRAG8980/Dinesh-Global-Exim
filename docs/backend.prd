@@ -1,0 +1,164 @@
+# BACKEND.PRD – Dinesh Global Exim
+
+## Backend Stack
+- Supabase
+- PostgreSQL Database
+- Supabase APIs
+- Supabase Storage
+- Supabase Authentication (Future Ready)
+
+---
+
+# Database Requirements
+
+## inquiries Table
+
+Fields:
+- id
+- name
+- email
+- country
+- company_name
+- phone_number
+- product_requirement
+- message
+- created_at
+
+Purpose:
+Store inquiry form submissions from international buyers.
+
+---
+
+## products Table
+
+Fields:
+- id
+- product_name
+- description
+- image_url
+- category
+- created_at
+
+Purpose:
+Store export product data dynamically.
+
+---
+
+## contact_messages Table
+
+Fields:
+- id
+- name
+- email
+- message
+- created_at
+
+Purpose:
+Store contact page messages.
+
+---
+
+# API Requirements
+
+## API Routes
+
+### /api/inquiry
+Purpose:
+Store inquiry form data into Supabase.
+
+### /api/contact
+Purpose:
+Store contact form submissions.
+
+### /api/products
+Purpose:
+Fetch products dynamically.
+
+---
+
+# Supabase Requirements
+
+## Features To Use
+- PostgreSQL Database
+- Row Level Security
+- Storage Buckets
+- API Access
+- Authentication (future use)
+
+---
+
+# Authentication (Future)
+
+## Future Admin Features
+- Admin login
+- Product management dashboard
+- Inquiry management panel
+
+Use Supabase Authentication.
+
+---
+
+# Storage Requirements
+
+## Product Images
+Store all product images using:
+- Supabase Storage Buckets
+
+---
+
+# Security Requirements
+
+- Enable Row Level Security (RLS)
+- Validate API requests
+- Protect environment variables
+- Prevent spam submissions
+
+---
+
+# Environment Variables
+
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+
+---
+
+# Backend Workflow
+
+## Inquiry Submission Flow
+
+1. User submits inquiry form
+2. Frontend validates data
+3. API route sends data to Supabase
+4. Data stored in inquiries table
+5. Success response returned
+
+---
+
+# Performance Requirements
+
+- Fast API response
+- Optimized queries
+- Scalable database structure
+- Secure APIs
+
+---
+
+# Deployment
+
+## Backend Hosting
+- Supabase Cloud
+
+## Frontend Hosting
+- Vercel
+
+---
+
+# Future Enhancements
+
+- CRM integration
+- Admin dashboard
+- Email notifications
+- Analytics dashboard
+- Product management system
+- Inquiry export system
+
