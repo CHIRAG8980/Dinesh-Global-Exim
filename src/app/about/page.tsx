@@ -70,7 +70,7 @@ export default function AboutPage() {
                 Dinesh Global Exim was established with a singular focus: to bridge the gap between premium Indian manufacturing and global market demands. Over the years, we have built a robust supply chain network, allowing us to export everything from Cotton Fabric and Garments to Agricultural Products and Metals.
               </p>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
-                Located in Ahmedabad, Gujarat, we operate from the heart of India's commercial hub. Our strategic location empowers us to offer competitive pricing, timely delivery, and uncompromised quality assurance to our international clientele.
+                Located in Ahmedabad, Gujarat, we operate from the heart of India&apos;s commercial hub. Our strategic location empowers us to offer competitive pricing, timely delivery, and uncompromised quality assurance to our international clientele.
               </p>
             </motion.div>
           </div>

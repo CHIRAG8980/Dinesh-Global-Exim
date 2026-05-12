@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Globe, ShieldCheck, Truck, Package, Factory, Leaf, Link as LinkIcon, Box } from "lucide-react";
+import { ArrowRight, Globe, ShieldCheck, Package, Factory, Leaf, Link as LinkIcon, Box } from "lucide-react";
 
 export default function Home() {
   const containerVariants = {
