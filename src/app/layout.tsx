@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Navbar } from "@/components/Navbar";
+import { AuthProvider } from "@/components/AuthProvider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
@@ -19,14 +20,16 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased`}>
-        <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
-          <div className="min-h-screen flex flex-col">
-            <Navbar />
-            <main className="flex-grow pt-20">
-              {children}
-            </main>
-          </div>
-        </ThemeProvider>
+        <AuthProvider>
+          <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
+            <div className="min-h-screen flex flex-col">
+              <Navbar />
+              <main className="flex-grow pt-20">
+                {children}
+              </main>
+            </div>
+          </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   );

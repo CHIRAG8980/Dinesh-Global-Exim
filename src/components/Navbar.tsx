@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -22,7 +23,7 @@ export function Navbar() {
         <div className="flex justify-between items-center h-24">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0 flex items-center">
-              <img src="/images/logo.png" alt="Dinesh Global Exim Logo" className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-md" />
+              <Image src="/images/logo.png" alt="Dinesh Global Exim Logo" width={80} height={80} className="w-16 h-16 sm:w-20 sm:h-20 object-contain drop-shadow-md" />
               <span className="font-bold text-xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-slate-900 to-slate-600 dark:from-white dark:to-slate-400">
                 Dinesh Global Exim
               </span>

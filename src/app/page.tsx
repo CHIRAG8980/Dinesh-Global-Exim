@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Globe, ShieldCheck, Package, Factory, Leaf, Link as LinkIcon, Box } from "lucide-react";
@@ -76,9 +77,11 @@ export default function Home() {
             >
               <div className="glass-panel p-2 aspect-square relative z-10 overflow-hidden group">
                 <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-yellow-500/10 z-20 group-hover:opacity-0 transition-opacity duration-500" />
-                <img 
+                <Image 
                   src="/images/hero_logistics.png" 
                   alt="Global Export Logistics" 
+                  width={800}
+                  height={800}
                   className="w-full h-full object-cover rounded-xl transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -154,7 +157,13 @@ export default function Home() {
                 className="group relative rounded-2xl overflow-hidden glass-panel h-80 flex flex-col justify-end"
               >
                 <div className="absolute inset-0">
-                  <img src={product.image} alt={product.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                  <Image 
+                    src={product.image} 
+                    alt={product.title} 
+                    width={600}
+                    height={400}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
+                  />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
                 </div>
                 <div className="relative z-10 p-6">
@@ -202,9 +211,11 @@ export default function Home() {
                 className="glass-panel p-6 text-center hover:-translate-y-2 transition-all duration-300 border-white/10 bg-white/5"
               >
                 <div className="flex justify-center mb-4 h-12">
-                  <img 
+                  <Image 
                     src={`https://flagcdn.com/${country.code}.svg`} 
                     alt={`${country.name} flag`} 
+                    width={64}
+                    height={42}
                     className="drop-shadow-md rounded-sm h-full object-cover"
                   />
                 </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Target, Lightbulb, ShieldCheck, Users, Globe, Award } from "lucide-react";
 
@@ -51,9 +52,11 @@ export default function AboutPage() {
               className="relative"
             >
               <div className="glass-panel p-2 overflow-hidden relative group">
-                <img 
+                <Image 
                   src="/images/corporate_office.png" 
                   alt="Corporate Office" 
+                  width={800}
+                  height={600}
                   className="w-full h-auto rounded-xl object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
