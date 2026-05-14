@@ -81,7 +81,7 @@ export default function ContactPage() {
                   <div>
                     <p className="font-medium text-slate-900 dark:text-white">Address</p>
                     <p className="text-slate-600 dark:text-slate-400 text-sm mt-1">
-                      501, Desk No. 243, Shapath 1, Bodakdev, SG Highway,<br />
+                      501, Desk No. 243, 5th Floor, Shapath 1, Bodakdev, SG Highway,<br />
                       Ahmedabad, Gujarat, India – 380054
                     </p>
                   </div>
