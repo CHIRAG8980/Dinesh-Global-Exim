@@ -19,6 +19,8 @@
       background-position: 200% center;
     }
   }
+
+  @variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 }
 
 @layer utilities {
@@ -49,8 +51,9 @@
 }
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
+  --background: #020617;
+  --foreground: #f8fafc;
+  color-scheme: dark;
 }
 
 [data-theme='dark'] {

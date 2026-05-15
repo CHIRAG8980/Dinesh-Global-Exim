@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   description: "Trusted Indian Exporter for Cotton Fabric, Readymade Garments, Agricultural Products, and Metals.",
 };
 
+export const viewport = {
+  themeColor: "#020617",
+  colorScheme: "dark",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -22,7 +27,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased`}>
         <AuthProvider>
-          <ThemeProvider attribute="data-theme" defaultTheme="system" enableSystem>
+          <ThemeProvider 
+            attribute="data-theme" 
+            defaultTheme="dark" 
+            enableSystem={false}
+            forcedTheme="dark"
+          >
             <div className="min-h-screen flex flex-col">
               <Navbar />
               <main className="flex-grow pt-20">
